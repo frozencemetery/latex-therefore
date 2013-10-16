@@ -15,16 +15,18 @@
 \ThereforePhrases(5)={Ergo,}
 \ThereforePhrases(6)={Thus,}
 \ThereforePhrases(7)={And verily,}
-\ThereforePhrases(8)={It is the will of the Gods that}
-\ThereforePhrases(9)={This implies}
-\ThereforePhrases(10)={Consequently,}
-\ThereforePhrases(11)={Accordingly,}
-\ThereforePhrases(12)={For this reason,}
-
-\def\numphrases{12}
+\ThereforePhrases(8)={This implies}
+\ThereforePhrases(9)={Consequently,}
+\ThereforePhrases(10)={Accordingly,}
+\ThereforePhrases(11)={For this reason,}
+\ThereforePhrases(12)={We find}
+\ThereforePhrases(13)={Consequently,}
+\ThereforePhrases(14)={Accordingly,}
+\def\numphrases{14}
 
 %allow user to set seed
 \DeclareOption*{\PassOptionsToPackage{\CurrentOption}{lcg}}
+\DeclareOption{romanian}{\input thereforeromanian.ldf}
 \ProcessOptions\relax
 
 \RequirePackage[first=1, last=\numphrases, counter=phraseIndex] {lcg}
